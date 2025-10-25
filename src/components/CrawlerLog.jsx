@@ -49,7 +49,7 @@ export default function CrawlerLog() {
   const getLogColor = (message, type) => {
     if (type === "error" || /error/i.test(message)) return "text-red-400";
     if (type === "insert" || /success|done|completed/i.test(message))
-      return "text-green-400";
+      return "text-green-800";
     if (type === "Skipped") return "text-blue-400";
     if (type === "exists" || /already exists/i.test(message))
       return "text-yellow-400";
@@ -148,3 +148,5 @@ export default function CrawlerLog() {
     </div>
   );
 }
+
+
